@@ -1,0 +1,96 @@
+/* General Styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Arial", sans-serif;
+  background-color: #1e1e1e;
+  color: #f1f1f1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+h3 {
+  margin: 10px 0;
+  font-size: 1.2em;
+  color: #ffffff;
+  height: fit-content;
+}
+
+#myId {
+  color: #4caf50;
+}
+
+#status {
+  color: #ff9800;
+}
+
+/* Container Styles */
+#container {
+  background-color: #2e2e2e;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  width: 80%;
+  margin: 20px;
+}
+
+/* Users List Styles */
+#users {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+#users button {
+  background-color: #3a3a3a;
+  border: 1px solid #4caf50;
+  width: 300px;
+  color: #f1f1f1;
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#users button:hover {
+  background-color: #4caf50;
+}
+
+/* Videos Section */
+#videos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-top: 10px;
+  place-content: center;
+  place-items: center;
+  align-items: center;
+}
+
+/* Video Styles */
+#videos video {
+  background-color: #000;
+  border: 2px solid #4caf50;
+  border-radius: 8px;
+  height:400px ;
+  width: 500px;
+  margin: 10px 0;
+}
+
+/* Responsive Styles */
+@media (max-width: 1000px) {
+  #container {
+    grid-template-rows: auto auto 1fr;
+  }
+
+  #videos {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+  }
+}
